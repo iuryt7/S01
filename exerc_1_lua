@@ -1,0 +1,17 @@
+function calcularTabuada(numero)
+    for i = 1, 10 do
+        local resultado = numero * i
+        print(numero .. " x " .. i .. " = " .. resultado)
+    end
+end
+
+-- Leitura do número fornecido pelo usuário
+io.write("Digite um número: ")
+local numero = tonumber(io.read())
+
+-- Verifica se o número é válido
+if numero then
+    calcularTabuada(numero)
+else
+    print("Por favor, insira um número válido.")
+end
