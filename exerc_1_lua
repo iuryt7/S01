@@ -4,12 +4,8 @@ function calcularTabuada(numero)
         print(numero .. " x " .. i .. " = " .. resultado)
     end
 end
-
--- Leitura do número fornecido pelo usuário
 io.write("Digite um número: ")
 local numero = tonumber(io.read())
-
--- Verifica se o número é válido
 if numero then
     calcularTabuada(numero)
 else
