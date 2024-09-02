@@ -1,0 +1,22 @@
+use std::io;
+
+fn preenche_arr(arr: &mut [i32; 10], x: i32) {
+    for i in 0..arr.len() {
+        arr[i] = i as i32 * x;
+    }
+}
+
+fn main() {
+    let mut array = [0; 10];
+    let mut valor_input = String::new();
+
+    println!("Digite um valor para multiplicar com os índices do array:");
+
+    io::stdin().read_line(&mut valor_input).expect("Erro ao ler o valor");
+
+    let valor: i32 = valor_input.trim().parse().expect("Por favor, digite um número válido");
+
+    preenche_arr(&mut array, valor);
+
+    println!("Array preenchido: {:?}", array);
+}
