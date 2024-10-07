@@ -1,0 +1,13 @@
+# Solicita ao usuário que insira três números
+puts "Digite o primeiro número:"
+num1 = gets.chomp.to_f
+puts "Digite o segundo número:"
+num2 = gets.chomp.to_f
+puts "Digite o terceiro número:"
+num3 = gets.chomp.to_f
+
+# Calcula a média dos três números
+media = (num1 + num2 + num3) / 3
+
+# Exibe a média calculada
+puts "A média dos três números é: #{media}"
